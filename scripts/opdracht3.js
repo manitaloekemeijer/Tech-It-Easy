@@ -7,9 +7,7 @@
 const listField = document.getElementById("list-field");
 inventory.map((tv) => {
     return listField.innerHTML += `
-      <ul>
-      <li id = "tv-brand">brand is ${tv.brand}</li>
-      </ul>
+      <li id = "tv-brand">${tv.brand}</li>
 `
 });
 

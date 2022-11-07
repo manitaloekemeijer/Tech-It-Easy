@@ -64,26 +64,14 @@ console.log("Opdracht 4c: " + sizesString);
 //     €379,-
 //     43 inch (109 cm) | 50 inch (127 cm) | 58 inch (147 cm)
 
-const tableField = document.getElementById("table-field");
+const tvName = document.getElementById("tv-name");
 
-function infoTVOnPage() {
-    function nameTV([a]) {
-        stringName = `${inventory[a].brand} ${inventory[a].type} - ${inventory[a]
-            .name}`
-        return (stringName).innerHTML;
-    }
+const specificTV = inventory.find((television) => {
+    return specificTV.type.innerHTML === "43PUS6504/12";
+    tvName = NameTV[]
+});
 
-    inventory.map((tv) => {
-        return tableField.innerHTML += `
-<tr>
-     <td id="name-field">${nameTV([tv])}</td>
-</tr>
-`
-    });
-}
-infoTVOnPage("television");
-// <td id="price-TV">${priceTV([tv])}</td>
-// <td id="all-ScreenSizes">${allScreenSizes([tv])}</td>
+
 // Opdracht 4e: Maak een herbruikbare functie die de informatie van
 // alle tv's weergeeft op de pagina. Gebruik hiervoor de '
 // 'map-methode in combinatie met de functies die je hebt gemaakt
