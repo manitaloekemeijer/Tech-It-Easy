@@ -19,9 +19,7 @@ console.log(soldOutTVs);
 // Log de uitkomst in de console.
 
 console.log('opdracht 1c: ');
-const ambilightTVs = inventory.filter((television) => {
-    return (television.options.ambiLight === true);
-});
+const ambilightTVs = inventory.filter(television => television.options.ambiLight);
 console.log(ambilightTVs);
 
 //Opdracht 1d: Schrijf een functie die alle tv's van laagste naar hoogste prijs sorteert.
